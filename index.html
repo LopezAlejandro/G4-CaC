@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TPO - Grupo 4</title>
-</head>
-<body>
-    Esto es una prueba
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery de Pastelería</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Delivery de Pastelería</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <section id="destacado">
+        <h2>Promoción Destacada</h2>
+        <p>Descripción de la promoción</p>
+        <a href="#" class="boton">Ver más</a>
+      </section>
+    </header>
+
+    <main>
+      <section id="productos">
+        <h2>Productos</h2>
+        <div class="categorias">
+          <h3>Categoría 1</h3>
+          <ul>
+            <li>
+              <img src="imagen1.jpg" alt="Producto 1" />
+              <h4>Producto 1</h4>
+              <p>Descripción del producto 1</p>
+              <button>Agregar al carrito</button>
+            </li>
+            <li>
+              <img src="imagen2.jpg" alt="Producto 2" />
+              <h4>Producto 2</h4>
+              <p>Descripción del producto 2</p>
+              <button>Agregar al carrito</button>
+            </li>
+            <li>
+              <img src="imagen3.jpg" alt="Producto 3" />
+              <h4>Producto 3</h4>
+              <p>Descripción del producto 3</p>
+              <button>Agregar al carrito</button>
+            </li>
+          </ul>
+        </div>
+        <div class="categorias">
+          <h3>Categoría 2</h3>
+          <ul>
+            <li>
+              <img src="imagen4.jpg" alt="Producto 4" />
+              <h4>Producto 4</h4>
+              <p>Descripción del producto 4</p>
+              <button>Agregar al carrito</button>
+            </li>
+            <li>
+              <img src="imagen5.jpg" alt="Producto 5" />
+              <h4>Producto 5</h4>
+              <p>Descripción del producto 5</p>
+              <button>Agregar al carrito</button>
+            </li>
+            <li>
+              <img src="imagen6.jpg" alt="Producto 6" />
+              <h4>Producto 6</h4>
+              <p>Descripción del producto 6</p>
+              <button>Agregar al carrito</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una amplia variedad de servicios para hacer de tu evento una experiencia única:</p>
+			<ul>
+				<li>Elaboración de tortas personalizadas</li>
+				<li>Catering para eventos</li>
+				<li>Mesas dulces temáticas</li>
+				<li>Cursos de repostería</li>
+			</ul>
+			<a href="#" class="boton">Ver más servicios</a>
+      </section>
+
+      <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Historia de la pastelería y su fundador</p>
+        <p>Información sobre el equipo y su experiencia</p>
+        <p>Testimonios de clientes satisfechos</p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="informacion">
+          <p>Ubicación: Dirección de la pastelería</p>
+          <p>Horario de atención: Lunes a Viernes de 9:00 a.m. a 7:00 p.m.</p>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.136971900283!2d-99.17328168567577!3d19.394110646952654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fda121d051e7%3A0x4c4f4ad1f4d06b13!2sPasteler%C3%ADa%20Deliciosa!5e0!3m2!1sen!2smx!4v1659290749508!5m2!1sen!2smx"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            <!-- Aquí iría un mapa interactivo de la ubicación de la pastelería -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="redes-sociales">
+        <h3>Redes sociales</h3>
+
+        <ul>
+          <li>
+            <a href="#"><img src="icono-facebook.png" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icono-instagram.png" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icono-twitter.png" alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+      <p>Derechos reservados &copy; 2023 - Delivery de Pastelería</p>
+    </footer>
+  </body>
 </html>
