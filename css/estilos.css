@@ -1,0 +1,308 @@
+/* CSS */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    border: none;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+header {
+	background-color: #F1CDB3;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+.logo img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #08192b;
+}
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.promo {
+	background-color: #f00;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.populares {
+	background-color: #F1CDB3;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.populares ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.populares li {
+	flex-basis: calc(33.33% - 20px);
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #d0cdcd;
+	padding: 20px;
+	text-align: center;
+}
+
+.populares li img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.populares li h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.populares li p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.populares li .btn {
+	display: inline-block;
+	background-color: #f00;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+.populares li .btn:hover {
+	background-color: #fff;
+	color: #f00;
+}
+
+/* Sección de productos */
+
+.productos {
+    background-color: #F1CDB3;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    
+    .producto {
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+    
+    .producto img {
+    max-width: 100%;
+    }
+    
+    .producto h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .producto p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    }
+    
+    .producto .precio {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    
+    .producto button {
+    background-color: #F7D8C0;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    .producto button:hover {
+    background-color: #F1CDB3;
+    }
+
+
+
+.contacto {
+	margin-top: 40px;
+}
+
+.contacto form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contacto label {
+	flex-basis: 100%;
+	margin-bottom: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+	flex-basis: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.contacto button[type="submit"] {
+	background-color: #f00;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.contacto button[type="submit"]:hover {
+	background-color: #fff;
+	color: #f00;
+}
+
+footer {
+    background-color: #08192b;
+    color: #869fb2;
+    font-size: 14px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.redes li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes img {
+    height: 30px;
+}
+/* Estilos específicos de la página de servicios */
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+}
+
+.servicio h3 {
+    margin-top: 0;
+}
+
+.servicio p {
+    margin-top: 10px;
+}
+.mapa iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    }
+
+    /* Estilos para la sección de sobre nosotros */
+
+#sobre-nosotros {
+    padding: 20px;
+    margin-top: 80px;
+  }
+  
+  #sobre-nosotros h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #sobre-nosotros p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+    
+  #testimonio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fcecec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  #testimonio p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  #testimonio span {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+  }
+  #testimonio li {
+    font-size: 1em;
+    margin-bottom: 0.7em;
+  }
+  
