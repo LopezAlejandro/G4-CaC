@@ -1,6 +1,4 @@
 /* CSS */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
-
 /* Main Primary color */
 .color-primary-0 {
   color: #933157;
@@ -52,6 +50,7 @@
 
 * {
   font-family: 'Open Sans', sans-serif;
+  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -87,9 +86,11 @@ header {
   margin-right: 10px;
 }
 .logo h1 {
-  font-size: 3.5rem;
-  padding-left: 0.5rem;
-  color: #dc93af;
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 4em;
+  padding-left: 0.5em;
+  color:black;
+  /*color: #dc93af;*/
 }
 
 nav ul {
