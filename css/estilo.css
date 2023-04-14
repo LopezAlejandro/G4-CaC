@@ -159,7 +159,7 @@ main {
 
 .productos {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
@@ -263,53 +263,126 @@ footer{
 }
 
 /*Estilos Adaptables */
-@media (max-width: 599px) {
+
+@media (max-width: 629px) {
   .logo {
-    display: none;
-  }
-  nav ul li a {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 830px) {
-  .logo {
-    display: none;
-  }
-
-  nav ul li a {
-    font-size: 1.5rem;
-  }
-
-  .productos {
+    background-color: #933157;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo h1 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    color:black;
+   
+  }
+  
+  .logo img {
+    display:none ;
+  }
+  
+  .producto {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
-@media (min-width: 831px) and (max-width: 1049px) {
+@media (min-width: 630px) and (max-width: 768px) {
+  .logo {
+    background-color: #933157;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .logo img {
-    display: none;
+    display:none ;
+  }
+  
+  .logo h1 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 3.5em;
+    padding-left: 0.5em;
+    color:black;
+
+  }
+  .producto {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .logo {
+    background-color: #933157;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+  }
+  
+  .logo h1 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 3.5em;
+    padding-left: 0.5em;
+    color:black;
+
+  }
+  .producto {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+}
+
+@media (min-width: 993px) {
+  .logo {
+    background-color: #933157;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
   }
 
   .logo h1 {
-    font-size: 2em;
-  }
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 4em;
+    padding-left: 0.5em;
+    color:black;
 
-  nav ul li a {
-    font-size: 1.5rem;
   }
-
-  .productos {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
+  .producto {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
-@media (min-width: 1050px) and (max-width: 1200px) {
-  nav ul li a {
-    font-size: 1rem;
-  }
-}
