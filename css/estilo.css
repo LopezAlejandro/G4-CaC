@@ -2,7 +2,7 @@
 /* Main Primary color */
 .color-primary-0 {
   color: #933157;
-} 
+}
 .color-primary-1 {
   color: #dc93af;
 }
@@ -18,7 +18,7 @@
 /* Main Secondary color (1) */
 .color-secondary-1-0 {
   color: #aa5039;
-} 
+}
 .color-secondary-1-1 {
   color: #ffbcaa;
 }
@@ -49,7 +49,7 @@
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -66,10 +66,8 @@ body {
 }
 
 header {
-  
   padding-top: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
 }
 
 .logo {
@@ -85,10 +83,10 @@ header {
   margin-right: 10px;
 }
 .logo h1 {
-  font-family: 'Delicious Handrawn', cursive;
+  font-family: "Delicious Handrawn", cursive;
   font-size: 4em;
   padding-left: 0.5em;
-  color:black;
+  color: black;
   /*color: #dc93af;*/
 }
 
@@ -169,7 +167,7 @@ main {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -190,7 +188,7 @@ main {
   margin-bottom: 10px;
 }
 
-.producto .btn{
+.producto .btn {
   align-self: flex-start;
 }
 .nosotros {
@@ -210,14 +208,14 @@ main {
   margin-bottom: 20px;
 }
 
-footer{
+footer {
   height: auto;
   width: 100%;
   padding-top: 20px;
   background-color: #300138;
   color: #a071a8;
 }
-.footer-contenido{
+.footer-contenido {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,84 +223,81 @@ footer{
   text-align: center;
 }
 
-.footer-contenido h3{
+.footer-contenido h3 {
   font-size: 2.1rem;
   font-weight: 500;
   line-height: 3rem;
 }
-.footer-contenido p{
+.footer-contenido p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
   color: #a071a8;
 }
-.redes{
+.redes {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 0 3rem 0;
 }
-.redes li{
+.redes li {
   margin: 0 10px;
 }
-.redes a{
+.redes a {
   text-decoration: none;
   color: #a071a8;
   border: 1.1px solid #a071a8;
   padding: 5px;
   border-radius: 50%;
 }
-.redes a i{
+.redes a i {
   font-size: 1.1rem;
   width: 20px;
-  transition: color .4s ease, transform .4s;
+  transition: color 0.4s ease, transform 0.4s;
 }
-.redes a:hover i{
+.redes a:hover i {
   color: #49001c;
   transform: rotate(360deg);
 }
 
-.filosofia{
+.filosofia {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.feature{
+.feature {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  /* flex-flow: row wrap; */
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
   align-content: stretch;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-  margin-bottom: 20px;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-
+  gap: 5px;
+  /*margin-right: 20px;*/
+  margin-bottom: 20px;
 }
 
-.feature:nth-child(odd)
- {
- 
+.feature:nth-child(odd) {
   flex-direction: row;
-  
 }
 
-
-.feature:nth-child(even)
- {
-    flex-direction: row-reverse;
- }
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
 .item-f:nth-child(1) {
   display: block;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 15%;
+  flex-basis: 20%;
   align-self: auto;
   order: 0;
 }
@@ -311,31 +306,31 @@ footer{
   display: block;
   flex-grow: 2;
   flex-shrink: 1;
-  flex-basis: 25%;
+  flex-basis: 15%;
   align-self: center;
   order: 0;
   margin-left: 25px;
-  
+  margin-right: 25px;
 }
 
 .item-f:nth-child(3) {
   display: block;
   flex-grow: 3;
   flex-shrink: 1;
-  flex-basis: 65%;
+  flex-basis: 60%;
   align-self: center;
   order: 0;
 }
 
-.feature img{
-  width: 100px;
+.feature img {
+  width: 150px;
   height: auto;
 }
 
-.feature h3{
+.feature h3 {
   font-size: 2em;
 }
-.feature p{
+.feature p {
   font-style: italic;
   font-weight: 700;
   text-align: justify;
@@ -350,19 +345,18 @@ footer{
     align-items: center;
     justify-content: center;
   }
-  
+
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 1.5em;
     padding-left: 0.5em;
-    color:black;
-   
+    color: black;
   }
-  
+
   .logo img {
-    display:none ;
+    display: none;
   }
-  
+
   .producto {
     flex-basis: calc(50% - 20px);
     margin-right: 20px;
@@ -371,8 +365,18 @@ footer{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .feature{
+  /*.feature {
     flex-direction: column;
+    flex-wrap: wrap;
+  }*/
+
+  .feature:nth-child(odd) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
@@ -384,17 +388,16 @@ footer{
     align-items: center;
     justify-content: center;
   }
-  
+
   .logo img {
-    display:none ;
+    display: none;
   }
-  
+
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 3.5em;
     padding-left: 0.5em;
-    color:black;
-
+    color: black;
   }
   .producto {
     flex-basis: calc(33.33% - 20px);
@@ -404,7 +407,16 @@ footer{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .feature{
+  /*.feature {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }*/
+  .feature:nth-child(odd) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .feature:nth-child(even) {
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -417,19 +429,18 @@ footer{
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .logo img {
     width: 150px;
     height: 150px;
     margin-right: 5px;
   }
-  
+
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 3.5em;
     padding-left: 0.5em;
-    color:black;
-
+    color: black;
   }
   .producto {
     flex-basis: calc(33.33% - 20px);
@@ -440,11 +451,15 @@ footer{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .feature {
+  .feature:nth-child(odd) {
     flex-direction: column;
     flex-wrap: wrap;
   }
   
+  .feature:nth-child(even) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 993px) {
@@ -454,7 +469,7 @@ footer{
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .logo img {
     width: 200px;
     height: 200px;
@@ -462,11 +477,10 @@ footer{
   }
 
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 4em;
     padding-left: 0.5em;
-    color:black;
-
+    color: black;
   }
   .producto {
     flex-basis: calc(33.33% - 20px);
@@ -476,8 +490,13 @@ footer{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .feature{
+  .feature:nth-child(odd) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 }
-
