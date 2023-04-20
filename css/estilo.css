@@ -336,6 +336,100 @@ footer {
   text-align: justify;
 }
 
+/*Estilos del formulario */
+
+/* reset */
+#cto-frm input,
+#cto-frm select,
+#cto-frm textarea,
+#cto-frm fieldset,
+#cto-frm label,
+#cto-frm  {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ }
+
+#cto-frm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cto-frm label,
+#cto-frm legend,
+#cto-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+#cto-frm input,
+#cto-frm select,
+#cto-frm textarea,
+#cto-frm {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#cto-frm input:focus,
+#cto-frm select:focus,
+#cto-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#cto-frm [type="text"],
+#cto-frm [type="email"] {
+  width: 100%;
+}
+
+#cto-frm [type="submit"]
+{
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: #49001c;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+#cto-frm [type="submit"]:hover
+{
+  outline: none;
+  background-color: #b85c7f;
+}
+
+/* direccion, ciudad */
+#cto-frm fieldset.ciudad input[name="provincia"],
+#cto-frm fieldset.ciudad select[name="ciudad"],
+#cto-frm fieldset.ciudad input[name="codigo"] {
+  display: inline;
+}
+#cto-frm fieldset.ciudad input[name="provincia"] {
+  width: 52%;
+}
+#cto-frm fieldset.ciudad select[name="ciudad"],
+#cto-frm fieldset.ciudad input[name="codigo"] {
+  width: 20%;
+}
+#cto-frm fieldset.ciudad input[name="provincia"],
+#cto-frm fieldset.ciudad select[name="ciudad"] {
+  margin-right: 3%;
+}
+
 /*Estilos Adaptables */
 
 @media (max-width: 629px) {
