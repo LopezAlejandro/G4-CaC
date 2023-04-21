@@ -296,7 +296,7 @@ footer {
 .item-f:nth-child(1) {
   display: block;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 2;
   flex-basis: 20%;
   align-self: auto;
   order: 0;
@@ -305,7 +305,7 @@ footer {
 .item-f:nth-child(2) {
   display: block;
   flex-grow: 2;
-  flex-shrink: 1;
+  flex-shrink: 2;
   flex-basis: 15%;
   align-self: center;
   order: 0;
@@ -428,6 +428,28 @@ footer {
 #cto-frm fieldset.ciudad input[name="provincia"],
 #cto-frm fieldset.ciudad select[name="ciudad"] {
   margin-right: 3%;
+}
+
+/*Estilo del mapa */
+ .mapa {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ } 
+
+.mapa-responsive{
+  overflow:hidden;
+  padding-bottom:35%;
+  position:relative;
+  height:0;
+}
+
+.mapa-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 /*Estilos Adaptables */
