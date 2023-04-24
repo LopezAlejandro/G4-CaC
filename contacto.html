@@ -49,10 +49,10 @@
       <h2>Contacto</h2>
       <section class="contacto">
         <form
-          id="cto-frm"
+          id="cto_frm"
           name="contacto-form"
           accept-charset="utf-8"
-          onsubmit="return validateForm()"
+          action = "https://formspree.io/f/xpzekdao"
           method="post">
           <fieldset id="cto-frm-inputs">
             <label for="nombre">Nombre Completo</label>
@@ -78,7 +78,7 @@
             />
             <fieldset class="ciudad">
               <legend>Ciudad</legend>
-              <input type="text" name="ciudad" placeholder="Ciudad" />
+              <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" />
               <select name="provincia">
                 <option value="Buenos Aires">Buenos Aires</option>
                 <option value="Ciudad Autonoma de Buenos Aires">
@@ -107,7 +107,8 @@
                 <option value="Tierra del Fuego">Tierra del Fuego</option>
                 <option value="Tucuman">Tucuman</option>
               </select>
-              <input type="text" name="codigo" placeholder="1234" />
+              <label for="codigo">Código Postal</label>
+              <input type="text" id="codigo" name="codigo" placeholder="1234" />
             </fieldset>
             <label for="mensaje">Mensaje</label>
             <textarea
