@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/324dfb2411.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/mijs.js"></script>
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
           <img src="img/logo.png" alt="Logo Cosmética Natural" />
         </div>
         <div>
-          <h1>Cosmética Natural</h1>
+          <h1>COSMÉTICA NATURAL</h1>
         </div>
       </div>
     </header>
@@ -37,41 +38,99 @@
       </ul>
     </nav>
     <main>
-      <section class="contacto">
-        <h2>Contacta con nosotros</h2>
+      <section class="banner">
+        <h2>Contactate con nosotros</h2>
         <p>
-          ¿Tienes alguna pregunta o comentario? No dudes en ponerte en contacto
-          con nosotros a través del siguiente formulario:
+          ¿Queres formar parte de Cosmética Natural vendiendo nuestros
+          productos? No dudes en ponerte en contacto con nosotros a través del
+          siguiente formulario:
         </p>
-
-        <form action="#" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="asunto">Asunto:</label>
-          <input type="text" id="asunto" name="asunto" required />
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
-
-          <input type="submit" value="Enviar" />
-        </form>
-
-        <div class="ubicacion">
-          <h3>Visítanos</h3>
-          <p>Estamos ubicados en la siguiente dirección:</p>
-          <address>
-            Av. Corrientes 348 2º Piso<br />
-            Ciudad Autonoma de Buenos Aires<br />
-            CP 12345<br />
-          </address>
-        </div>
       </section>
-      <div class="mapa">
-        <h4>Encuéntranos</h4>
+      <h2>Contacto</h2>
+      <section class="contacto">
+        <form
+          id="cto_frm"
+          name="contacto-form"
+          accept-charset="utf-8"
+          action = "https://formspree.io/f/xpzekdao"
+          method="post">
+          <fieldset id="cto-frm-inputs">
+            <label for="nombre">Nombre Completo</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre y Apellido"
+            />
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="correo@electronico.ar"
+            />
+            <label for="direccion">Direccion</label>
+            <input
+              type="text"
+              name="direccion"
+              id="direccion"
+              placeholder="Direccion"
+            />
+            <fieldset class="ciudad">
+              <legend>Ciudad</legend>
+              <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" />
+              <select name="provincia">
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Ciudad Autonoma de Buenos Aires">
+                  Ciudad Autonoma de Buenos Aires
+                </option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Rios">Entre Rios</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquen</option>
+                <option value="Rio Negro">Rio Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucuman">Tucuman</option>
+              </select>
+              <label for="codigo">Código Postal</label>
+              <input type="text" id="codigo" name="codigo" placeholder="1234" />
+            </fieldset>
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              rows="2"
+              name="mensaje"
+              id="mensaje"
+              placeholder="Envianos cualquier inquietud adicional"
+            ></textarea>
+            <input
+              type="hidden"
+              name="tema"
+              id="tema"
+              value="Contacto desde la pagina"
+            />
+          </fieldset>
+          <input id="btn-submit" type="submit" value="Enviar" />
+        </form>        
+      </section>
+      <h4>Encuéntranos</h4>
+      <section class="mapa">
+          
+        <div class="mapa-responsive">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0358480804257!2d-58.37637522474995!3d-34.603255013181204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd353c6b03%3A0x1ba76e3637c10823!2sAv.%20Corrientes%20348%2C%20C1043%20San%20Nicolas%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681753408951!5m2!1ses!2sar"
           width="600"
@@ -82,6 +141,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      </section>
     </main>
     <footer>
       <div class="footer-contenido">
@@ -92,19 +152,19 @@
         </p>
         <ul class="redes">
           <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="https://goo.gl/maps/bTdzacfjJe27DHXq5" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
           </li>
         </ul>
       </div>

@@ -2,7 +2,7 @@
 /* Main Primary color */
 .color-primary-0 {
   color: #933157;
-} 
+}
 .color-primary-1 {
   color: #dc93af;
 }
@@ -18,7 +18,7 @@
 /* Main Secondary color (1) */
 .color-secondary-1-0 {
   color: #aa5039;
-} 
+}
 .color-secondary-1-1 {
   color: #ffbcaa;
 }
@@ -49,7 +49,7 @@
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -66,10 +66,8 @@ body {
 }
 
 header {
-  
   padding-top: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
 }
 
 .logo {
@@ -85,10 +83,10 @@ header {
   margin-right: 10px;
 }
 .logo h1 {
-  font-family: 'Delicious Handrawn', cursive;
+  font-family: "Delicious Handrawn", cursive;
   font-size: 4em;
   padding-left: 0.5em;
-  color:black;
+  color: black;
   /*color: #dc93af;*/
 }
 
@@ -169,6 +167,9 @@ main {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .producto img {
@@ -187,6 +188,9 @@ main {
   margin-bottom: 10px;
 }
 
+.producto .btn {
+  align-self: flex-start;
+}
 .nosotros {
   background-color: #b85c7f;
   color: #551200;
@@ -204,14 +208,14 @@ main {
   margin-bottom: 20px;
 }
 
-footer{
+footer {
   height: auto;
   width: 100%;
   padding-top: 20px;
   background-color: #300138;
   color: #a071a8;
 }
-.footer-contenido{
+.footer-contenido {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,83 +223,81 @@ footer{
   text-align: center;
 }
 
-.footer-contenido h3{
+.footer-contenido h3 {
   font-size: 2.1rem;
   font-weight: 500;
   line-height: 3rem;
 }
-.footer-contenido p{
+.footer-contenido p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
   color: #a071a8;
 }
-.redes{
+.redes {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 0 3rem 0;
 }
-.redes li{
+.redes li {
   margin: 0 10px;
 }
-.redes a{
+.redes a {
   text-decoration: none;
   color: #a071a8;
   border: 1.1px solid #a071a8;
   padding: 5px;
   border-radius: 50%;
 }
-.redes a i{
+.redes a i {
   font-size: 1.1rem;
   width: 20px;
-  transition: color .4s ease;
+  transition: color 0.4s ease, transform 0.4s;
 }
-.redes a:hover i{
+.redes a:hover i {
   color: #49001c;
+  transform: rotate(360deg);
 }
 
-.filosofia{
+.filosofia {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.feature{
+.feature {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  /* flex-flow: row wrap; */
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
   align-content: stretch;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-  margin-bottom: 20px;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-
+  gap: 5px;
+  /*margin-right: 20px;*/
+  margin-bottom: 20px;
 }
 
-.feature:nth-child(odd)
- {
- 
+.feature:nth-child(odd) {
   flex-direction: row;
-  
 }
 
-
-.feature:nth-child(even)
- {
-    flex-direction: row-reverse;
- }
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
 .item-f:nth-child(1) {
   display: block;
   flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 15%;
+  flex-shrink: 2;
+  flex-basis: 20%;
   align-self: auto;
   order: 0;
 }
@@ -303,35 +305,152 @@ footer{
 .item-f:nth-child(2) {
   display: block;
   flex-grow: 2;
-  flex-shrink: 1;
-  flex-basis: 25%;
+  flex-shrink: 2;
+  flex-basis: 15%;
   align-self: center;
   order: 0;
   margin-left: 25px;
-  
+  margin-right: 25px;
 }
 
 .item-f:nth-child(3) {
   display: block;
   flex-grow: 3;
   flex-shrink: 1;
-  flex-basis: 65%;
+  flex-basis: 60%;
   align-self: center;
   order: 0;
 }
 
-.feature img{
-  width: 100px;
+.feature img {
+  width: 150px;
   height: auto;
 }
 
-.feature h3{
+.feature h3 {
   font-size: 2em;
 }
-.feature p{
+.feature p {
   font-style: italic;
   font-weight: 700;
   text-align: justify;
+}
+
+/*Estilos del formulario */
+
+/* reset */
+#cto_frm input,
+#cto_frm select,
+#cto_frm textarea,
+#cto_frm fieldset,
+#cto_frm label,
+#cto_frm  {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ }
+
+#cto_frm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cto_frm label,
+#cto_frm legend,
+#cto_frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+#cto_frm input,
+#cto_frm select,
+#cto_frm textarea,
+#cto_frm {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#cto_frm input:focus,
+#cto_frm select:focus,
+#cto_frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#cto_frm [type="text"],
+#cto_frm [type="email"] {
+  width: 100%;
+}
+
+#cto_frm [type="submit"]
+{
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: #49001c;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+#cto_frm [type="submit"]:hover,
+#cto_frm [type="submit"]:focus
+{
+  outline: none;
+  background-color: #b85c7f;
+}
+
+/* direccion, ciudad */
+#cto_frm fieldset.ciudad input[name="provincia"],
+#cto_frm fieldset.ciudad select[name="ciudad"],
+#cto_frm fieldset.ciudad input[name="codigo"] {
+  display: inline;
+}
+#cto_frm fieldset.ciudad input[name="provincia"] {
+  width: 52%;
+}
+#cto_frm fieldset.ciudad select[name="ciudad"],
+#cto_frm fieldset.ciudad input[name="codigo"] {
+  width: 20%;
+}
+#cto_frm fieldset.ciudad input[name="provincia"],
+#cto_frm fieldset.ciudad select[name="ciudad"] {
+  margin-right: 3%;
+}
+
+/*Estilo del mapa */
+ .mapa {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ } 
+
+.mapa-responsive{
+  overflow:hidden;
+  padding-bottom:35%;
+  position:relative;
+  height:0;
+}
+
+.mapa-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 /*Estilos Adaptables */
@@ -343,19 +462,18 @@ footer{
     align-items: center;
     justify-content: center;
   }
-  
+
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 1.5em;
     padding-left: 0.5em;
-    color:black;
-   
+    color: black;
   }
-  
+
   .logo img {
-    display:none ;
+    display: none;
   }
-  
+
   .producto {
     flex-basis: calc(50% - 20px);
     margin-right: 20px;
@@ -364,8 +482,18 @@ footer{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .feature{
+  /*.feature {
     flex-direction: column;
+    flex-wrap: wrap;
+  }*/
+
+  .feature:nth-child(odd) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 }
@@ -377,17 +505,16 @@ footer{
     align-items: center;
     justify-content: center;
   }
-  
+
   .logo img {
-    display:none ;
+    display: none;
   }
-  
+
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 3.5em;
     padding-left: 0.5em;
-    color:black;
-
+    color: black;
   }
   .producto {
     flex-basis: calc(33.33% - 20px);
@@ -397,7 +524,16 @@ footer{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .feature{
+  /*.feature {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }*/
+  .feature:nth-child(odd) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .feature:nth-child(even) {
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -410,19 +546,18 @@ footer{
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .logo img {
     width: 150px;
     height: 150px;
     margin-right: 5px;
   }
-  
+
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 3.5em;
     padding-left: 0.5em;
-    color:black;
-
+    color: black;
   }
   .producto {
     flex-basis: calc(33.33% - 20px);
@@ -433,11 +568,15 @@ footer{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .feature {
+  .feature:nth-child(odd) {
     flex-direction: column;
     flex-wrap: wrap;
   }
   
+  .feature:nth-child(even) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 993px) {
@@ -447,7 +586,7 @@ footer{
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .logo img {
     width: 200px;
     height: 200px;
@@ -455,11 +594,10 @@ footer{
   }
 
   .logo h1 {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: "Delicious Handrawn", cursive;
     font-size: 4em;
     padding-left: 0.5em;
-    color:black;
-
+    color: black;
   }
   .producto {
     flex-basis: calc(33.33% - 20px);
@@ -469,8 +607,13 @@ footer{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .feature{
+  .feature:nth-child(odd) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 }
-
