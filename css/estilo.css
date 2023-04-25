@@ -93,6 +93,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -475,7 +476,7 @@ footer {
   }
 
   .producto {
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(100% - 20px);
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: #fff;
