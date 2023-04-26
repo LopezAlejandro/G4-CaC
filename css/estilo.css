@@ -336,6 +336,13 @@ footer {
   font-weight: 700;
   text-align: justify;
 }
+.item-f img {
+  transition: transform 0.4s;
+ }
+
+ .item-f img:hover {
+  transform: scale(0.8);
+ }
 
 /*Estilos del formulario */
 
