@@ -71,7 +71,8 @@ header {
 }
 
 .logo {
-  background-color: #933157;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  /*background-color: #933157;*/
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -105,19 +106,19 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #551200;
+  color: black;  /* #551200 */ 
   font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
-  background: #ffbcaa;
+  background: #DDA0DD; /* #ffbcaa*/
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
 nav ul li a:hover {
-  color: #ffbcca;
-  background: #551200;
+  color: white;  /*  #ffbcca  */
+  background: #8E44AD; /* #8E44AD  #551200  */
 }
 
 main {
@@ -126,14 +127,23 @@ main {
 }
 
 .banner {
-  background-color: #b85c7f;
-  color: #551200;
+  background-color: #E8DAEF; /* #E8DAEF  E6E6FA   #b85c7f    */
+  color: black; /* #551200 */
   padding: 50px;
   text-align: center;
 }
 
 .banner h2 {
   font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner h3 {
+  color: #8E44AD;
+  /*font-style:italic;*/
+  font-family: "Delicious Handrawn", cursive;
+  font-weight:900;
+  font-size: 24px; 
   margin-bottom: 20px;
 }
 
@@ -145,14 +155,15 @@ main {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #49001c;
-  color: #fff;
+  background-color: #DDA0DD;  /* #49001c*/ 
+  color: black; /* #fff*/
   border-radius: 5px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #b85c7f;
+  background-color: #8E44AD; /*  #b85c7f   */   
+  color: white;
 }
 
 .productos {
@@ -194,8 +205,8 @@ main {
   align-self: flex-start;
 }
 .nosotros {
-  background-color: #b85c7f;
-  color: #551200;
+  background-color: #E8DAEF; /* #b85c7f  */
+  color: black; /* #551200 */
   padding: 50px;
   text-align: center;
 }
@@ -217,19 +228,23 @@ footer {
   background-color: #300138;
   color: #a071a8;
 }
-.footer-contenido {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
+
 
 .footer-contenido h3 {
   font-size: 2.1rem;
   font-weight: 500;
   line-height: 3rem;
 }
+
+.footer-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
 .footer-contenido p {
   max-width: 500px;
   margin: 10px auto;
@@ -237,6 +252,8 @@ footer {
   font-size: 14px;
   color: #a071a8;
 }
+
+
 .redes {
   list-style: none;
   display: flex;
@@ -344,6 +361,88 @@ footer {
   transform: scale(0.8);
  }
 
+ /*INICIO: Para seccion Nuestro Equipo*/
+ .MaitriTeam {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.Empleado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ 
+  flex-wrap: wrap;
+  align-content: stretch;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  gap: 5px;
+  /*margin-right: 20px;*/
+  margin-bottom: 20px;
+}
+
+.Empleado:nth-child(odd) {
+  flex-direction: row;
+}
+
+.Empleado:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.item-e:nth-child(1) {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 10%;
+  align-self: auto;
+  order: 0;
+}
+
+.item-e:nth-child(2) {
+  display: flex;
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 15%;
+  align-self: center;
+  order: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.item-e:nth-child(3) {
+  display: flex;
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 60%;
+  align-self: center;
+  order: 0;
+}
+
+.Empleado img {
+  width: 150px;
+  height: auto;
+}
+
+.Empleado h3 {
+  font-size: 2em;
+}
+.Empleado p {
+  font-style: italic;
+  font-weight: 700;
+  text-align: justify;
+}
+.item-e img {
+  transition: transform 0.4s;
+ }
+
+ .item-e img:hover {
+  transform: scale(0.8);
+ }
+/*FIN: Para seccion Nuestro Equipo*/
+
 /*Estilos del formulario */
 
 /* reset */
@@ -401,6 +500,7 @@ footer {
   width: 100%;
 }
 
+
 #cto_frm [type="submit"]
 {
   width: auto;
@@ -408,8 +508,8 @@ footer {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  background-color: #49001c;
-  color: #fff;
+  background-color: #DDA0DD; /* #49001c */
+  color: blank; /* #fff */
   border-radius: 5px;
   margin-bottom: 0;
 }
@@ -418,7 +518,8 @@ footer {
 #cto_frm [type="submit"]:focus
 {
   outline: none;
-  background-color: #b85c7f;
+  background-color: #8E44AD;  /* #b85c7f */
+  color: white;
 }
 
 /* direccion, ciudad */
