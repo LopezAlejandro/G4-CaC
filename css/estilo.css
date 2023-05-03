@@ -72,7 +72,6 @@ header {
 
 .logo {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-  /*background-color: #933157;*/
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -96,8 +95,8 @@ main {
 }
 
 .banner {
-  background-color: #E8DAEF; /* #E8DAEF  E6E6FA   #b85c7f    */
-  color: black; /* #551200 */
+  background-color: #e8daef;
+  color: black; 
   padding: 50px;
   text-align: center;
 }
@@ -108,11 +107,10 @@ main {
 }
 
 .banner h3 {
-  color: #8E44AD;
-  /*font-style:italic;*/
+  color: #8e44ad;
   font-family: "Delicious Handrawn", cursive;
-  font-weight:900;
-  font-size: 24px; 
+  font-weight: 900;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -124,14 +122,14 @@ main {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #DDA0DD;  /* #49001c*/ 
-  color: black; /* #fff*/
+  background-color: #dda0dd;
+  color: black;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #8E44AD; /*  #b85c7f   */   
+  background-color: #8e44ad; 
   color: white;
 }
 
@@ -173,8 +171,8 @@ main {
   align-self: flex-start;
 }
 .nosotros {
-  background-color: #E8DAEF; /* #b85c7f  */
-  color: black; /* #551200 */
+  background-color: #e8daef;
+  color: black; 
   padding: 50px;
   text-align: center;
 }
@@ -197,7 +195,6 @@ footer {
   color: #a071a8;
 }
 
-
 .footer-contenido h3 {
   font-size: 2.1rem;
   font-weight: 500;
@@ -210,7 +207,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-
 }
 
 .footer-contenido p {
@@ -220,7 +216,6 @@ footer {
   font-size: 14px;
   color: #a071a8;
 }
-
 
 .redes {
   list-style: none;
@@ -327,8 +322,8 @@ footer {
   transform: scale(0.8);
 }
 
- /*INICIO: Para seccion Nuestro Equipo*/
- .MaitriTeam {
+/*INICIO: Para seccion Nuestro Equipo*/
+.MaitriTeam {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -339,14 +334,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
- 
+
   flex-wrap: wrap;
   align-content: stretch;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   gap: 5px;
-  /*margin-right: 20px;*/
   margin-bottom: 20px;
 }
 
@@ -402,11 +396,11 @@ footer {
 }
 .item-e img {
   transition: transform 0.4s;
- }
+}
 
- .item-e img:hover {
+.item-e img:hover {
   transform: scale(0.8);
- }
+}
 /*FIN: Para seccion Nuestro Equipo*/
 
 /*Estilos del formulario */
@@ -472,8 +466,8 @@ footer {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  background-color: #DDA0DD; /* #49001c */
-  color: blank; /* #fff */
+  background-color: #dda0dd;
+  color: blank;
   border-radius: 5px;
   margin-bottom: 0;
 }
@@ -481,7 +475,7 @@ footer {
 #cto_frm [type="submit"]:hover,
 #cto_frm [type="submit"]:focus {
   outline: none;
-  background-color: #8E44AD;  /* #b85c7f */
+  background-color: #8e44ad; 
   color: white;
 }
 
@@ -571,21 +565,19 @@ footer {
 }
 
 .nav_menu a {
-   color: black;
-  /*color: #551200;*/
+  color: black;
   font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
   background: #dda0dd;
-  /*background: #ffbcaa;*/
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
 .nav_menu a:hover {
-  color: white;  /*  #ffbcca  */
-  background: #8E44AD; /* #8E44AD  #551200  */
+  color: white; 
+  background: #8e44ad;
 }
 
 #nav_checkbox:checked ~ ul.nav_menu li {
