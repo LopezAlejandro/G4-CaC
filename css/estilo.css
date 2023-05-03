@@ -586,6 +586,7 @@ footer {
 .nav_menu a:hover {
   color: white;  /*  #ffbcca  */
   background: #8E44AD; /* #8E44AD  #551200  */
+}
 
 #nav_checkbox:checked ~ ul.nav_menu li {
   display: block;
