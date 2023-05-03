@@ -87,6 +87,37 @@ header {
   font-size: 4em;
   padding-left: 0.5em;
   color: black;
+  /*color: #dc93af;*/
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  flex: 3;
+  padding: 2px;
+}
+
+nav ul li a {
+  color: #551200;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #ffbcaa;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  color: #ffbcca;
+  background: #551200;
 }
 
 main {
@@ -146,6 +177,7 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+
 }
 
 .producto h3 {
@@ -243,12 +275,14 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+ 
   flex-wrap: wrap;
   align-content: stretch;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   gap: 5px;
+  /*margin-right: 20px;*/
   margin-bottom: 20px;
 }
 
@@ -304,11 +338,11 @@ footer {
 }
 .item-f img {
   transition: transform 0.4s;
-}
+ }
 
-.item-f img:hover {
+ .item-f img:hover {
   transform: scale(0.8);
-}
+ }
 
 /*Estilos del formulario */
 
@@ -318,7 +352,7 @@ footer {
 #cto_frm textarea,
 #cto_frm fieldset,
 #cto_frm label,
-#cto_frm {
+#cto_frm  {
   font-family: inherit;
   font-size: 100%;
   color: inherit;
@@ -328,7 +362,7 @@ footer {
   width: 100%;
   padding: 0;
   margin: 0;
-}
+ }
 
 #cto_frm {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -337,9 +371,9 @@ footer {
 #cto_frm label,
 #cto_frm legend,
 #cto_frm ::placeholder {
-  font-size: 0.825rem;
-  margin-bottom: 0.5rem;
-  padding-top: 0.2rem;
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
   display: flex;
   align-items: baseline;
 }
@@ -347,9 +381,9 @@ footer {
 #cto_frm select,
 #cto_frm textarea,
 #cto_frm {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0.75em 1rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -367,7 +401,8 @@ footer {
   width: 100%;
 }
 
-#cto_frm [type="submit"] {
+#cto_frm [type="submit"]
+{
   width: auto;
   cursor: pointer;
   -webkit-appearance: button;
@@ -380,7 +415,8 @@ footer {
 }
 
 #cto_frm [type="submit"]:hover,
-#cto_frm [type="submit"]:focus {
+#cto_frm [type="submit"]:focus
+{
   outline: none;
   background-color: #b85c7f;
 }
@@ -404,98 +440,30 @@ footer {
 }
 
 /*Estilo del mapa */
-.mapa {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+ .mapa {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ } 
+
+.mapa-responsive{
+  overflow:hidden;
+  padding-bottom:35%;
+  position:relative;
+  height:0;
 }
 
-.mapa-responsive {
-  overflow: hidden;
-  padding-bottom: 35%;
-  position: relative;
-  height: 0;
-}
-
-.mapa-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-/*Estilos del menu hamburguesa*/
-
-.nav_checkbox {
-  display: none;
-}
-
-.nav_toggle {
-  cursor: pointer;
-  margin-left: 1rem;
-  position: absolute;
-  left: 35px;
-  top: 52px;
-}
-
-.nav_toggle svg {
-  fill: var(--white);
-  width: 1rem;
-}
-
-.nav_toggle .close {
-  display: none;
-}
-
-.nav_toggle .close,
-.nav_toggle .menu {
-  margin-top: 0.3rem;
-}
-
-.nav_menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  background: #ffbcaa;
-}
-
-.nav_menu li {
-  display: none;
-  list-style-type: none;
-  flex: 3;
-  padding: 2px;
-}
-
-.nav_menu a {
-  color: #551200;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-decoration: none;
-  background: #ffbcaa;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-
-#nav_checkbox:checked ~ ul.nav_menu li {
-  display: block;
-}
-
-#nav_checkbox:checked ~ label.nav_toggle .close {
-  display: block;
-}
-
-#nav_checkbox:checked ~ label.nav_toggle .menu {
-  display: none;
+.mapa-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 /*Estilos Adaptables */
 
-@media only screen and (max-width: 629px) {
+@media (max-width: 629px) {
   .logo {
     background-color: #933157;
     display: flex;
@@ -522,23 +490,23 @@ footer {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-
+  
   .feature:nth-child(odd) {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  
   .feature:nth-child(even) {
     flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 
-  .item-f:nth-child(1) {
+  .item-f:nth-child(1){
     align-self: center;
   }
 }
 
-@media only screen and (min-width: 630px) and (max-width: 768px) {
+@media (min-width: 630px) and (max-width: 768px) {
   .logo {
     background-color: #933157;
     display: flex;
@@ -557,29 +525,29 @@ footer {
     color: black;
   }
   .producto {
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(33.33% - 20px);
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-
+  
   .feature:nth-child(odd) {
     flex-direction: column;
     flex-wrap: wrap;
   }
-
+  
   .feature:nth-child(even) {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .item-f:nth-child(1) {
+  .item-f:nth-child(1){
     align-self: center;
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .logo {
     background-color: #933157;
     display: flex;
@@ -612,17 +580,17 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
   }
-
+  
   .feature:nth-child(even) {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .item-f:nth-child(1) {
+  .item-f:nth-child(1){
     align-self: center;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media (min-width: 993px) {
   .logo {
     background-color: #933157;
     display: flex;
@@ -654,28 +622,13 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  
   .feature:nth-child(even) {
     flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 
-  .item-f:nth-child(1) {
+  .item-f:nth-child(1){
     align-self: auto;
-  }
-}
-
-@media only screen and (min-width: 629px) {
-  .nav_toggle {
-    display: none;
-  }
-
-  .nav_menu {
-    flex-direction: row;
-    background: white;
-  }
-
-  .nav_menu li {
-    display: block;
   }
 }
