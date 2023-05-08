@@ -20,9 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   var validarCiudad = function (e) {
-    if (formulario.ciudad.value.length < 10) {
+    if (formulario.ciudad.value.length == 1) {
       alert("Por favor, escribe el nombre de tu ciudad.");
       document.getElementById("ciudad").focus();
+      return false;
+    }
+    return true;
+  };
+  
+  var validarPcia = function (e) {
+    if (formulario.provincia.value.length == 0) {
+      alert("Por favor, elija una provincia valida.");
+      document.getElementById("provincia").focus();
       return false;
     }
     return true;
@@ -65,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       validarCiudad()&&
       validarCodigo()&&
       validarCorreo() &&
+      validarPcia()&&
       validarMensaje()
     );
   };

@@ -588,6 +588,58 @@ footer {
   display: none;
 }
 
+/* Clientes , donde se consume la api */
+.clientes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.cliente {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: stretch;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cliente img {
+    width: auto;
+    height: auto;
+  
+}
+.cliente p {
+  font-style: italic;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.item-c:nth-child(1) {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 10%;
+  align-self: auto;
+  order: 0;
+}
+
+.item-c:nth-child(2) {
+  display: flex;
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 15%;
+  align-self: center;
+  order: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+}
 /*Estilos Adaptables */
 
 @media only screen and (max-width: 629px) {
@@ -625,6 +677,20 @@ footer {
   }
 
   .item-e:nth-child(1) {
+    align-self: center;
+  }
+
+  .cliente:nth-child(odd) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .cliente:nth-child(even) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .item-c:nth-child(1) {
     align-self: center;
   }
 
@@ -667,6 +733,20 @@ footer {
   .item-e:nth-child(1) {
     align-self: center;
   }
+  .cliente:nth-child(odd) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .cliente:nth-child(even) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .item-c:nth-child(1) {
+    align-self: center;
+  }
+
 }
 
 @media only screen and (min-width: 769px)  {
@@ -706,6 +786,20 @@ footer {
   .item-e:nth-child(1) {
     align-self: center;
   }
+  .cliente:nth-child(odd) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cliente:nth-child(even) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item-c:nth-child(1) {
+    align-self: center;
+  }
+
 }
 
 @media only screen and (min-width: 629px) {
