@@ -63,6 +63,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3em 1.5em;
+  
+  background: url("../img/Fondo HTML 5.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
