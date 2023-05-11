@@ -97,7 +97,7 @@ main {
 
 .banner {
   background-color: #e8daef;
-  color: black; 
+  color: black;
   padding: 50px;
   text-align: center;
 }
@@ -130,7 +130,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #8e44ad; 
+  background-color: #8e44ad;
   color: white;
 }
 
@@ -173,7 +173,7 @@ main {
 }
 .nosotros {
   background-color: #e8daef;
-  color: black; 
+  color: black;
   padding: 50px;
   text-align: center;
 }
@@ -477,7 +477,7 @@ footer {
 #cto_frm [type="submit"]:hover,
 #cto_frm [type="submit"]:focus {
   outline: none;
-  background-color: #8e44ad; 
+  background-color: #8e44ad;
   color: white;
 }
 
@@ -551,7 +551,7 @@ footer {
   align-items: center;
   margin: 0;
   padding: 0;
-  background:#dda0dd;
+  background: #dda0dd;
 }
 
 .nav_menu li {
@@ -573,7 +573,7 @@ footer {
 }
 
 .nav_menu a:hover {
-  color: white; 
+  color: white;
   background: #8e44ad;
 }
 
@@ -590,95 +590,39 @@ footer {
 }
 
 /* Clientes , donde se consume la api */
-.clientes {
-    /* display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    gap: 10px; */
-    padding: 32px 0;
-  margin-top: 2rem;
-  
-}
-.contenedor-clientes{
+
+.contenedor-clientes {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.cliente{
+.cliente {
   text-align: center;
-  width: 21.875rem;
+  /* width: 21.875rem; */
+  width: calc(33.33% - 20px);
   padding: 1rem;
 }
 
-.cliente-card{
+.cliente-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 10px;
 }
-.nombre-cliente{
+.nombre-cliente {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
-.comentario-cliente{
-  margin-bottom: .5rem;
-}
-
-/* .cliente {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  gap: 5px;
-  margin-bottom: 20px;
+.comentario-cliente {
+  text-align: center;
 }
 
-.cliente-izq {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.cliente-der{
-  display: flex;
-  flex-grow: 1;
-} */
-.cliente-pic{
+.cliente-pic {
   width: 65%;
   height: 60%;
 }
-/* .cliente img {
-    width: auto;
-    height: auto;
-  
-} */
-.cliente p {
-  font-style: italic;
-  font-weight: 700;
-  text-align: justify;
-  padding: 0.4rem;
-}
-
-/* .item-c:nth-child(1) {
-  display: flex;
-  flex-direction: column;  
-}
-
-.item-c:nth-child(2) {
-  display: flex;
-  flex-grow: 2;
-  flex-shrink: 2;
-  flex-basis: 15%;
-  align-self: center;
-  order: 0;
-  margin-left: 25px;
-  margin-right: 25px;
-} */
 
 /*Estilos Adaptables */
 
@@ -720,25 +664,16 @@ footer {
     align-self: center;
   }
 
-  /* .cliente:nth-child(odd) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+  .contenedor-clientes {
+    flex-wrap: wrap;
   }
 
-  .cliente:nth-child(even) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+  .cliente {
+    width: calc(75% - 20px);
   }
-
-  .item-c:nth-child(1) {
-    align-self: center;
-  } */
-
-
 }
 
 @media only screen and (min-width: 630px) and (max-width: 768px) {
-  
   .producto {
     flex-basis: calc(50% - 20px);
     margin-right: 20px;
@@ -760,12 +695,12 @@ footer {
   .item-f:nth-child(1) {
     align-self: center;
   }
-  
+
   .Empleado:nth-child(odd) {
     flex-direction: column;
     flex-wrap: wrap;
   }
- 
+
   .Empleado:nth-child(even) {
     flex-direction: column;
     flex-wrap: wrap;
@@ -774,25 +709,17 @@ footer {
   .item-e:nth-child(1) {
     align-self: center;
   }
-  
-  /* .cliente:nth-child(odd) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+
+  .contenedor-clientes {
+    flex-wrap: wrap;
   }
 
-  .cliente:nth-child(even) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+  .cliente {
+    width: calc(40% - 20px);
   }
-
-  .item-c:nth-child(1) {
-    align-self: center;
-  }
- */
 }
 
-@media only screen and (min-width: 769px)  {
-  
+@media only screen and (min-width: 769px) {
   .producto {
     flex-basis: calc(33.33% - 20px);
     margin-right: 20px;
@@ -828,20 +755,9 @@ footer {
   .item-e:nth-child(1) {
     align-self: center;
   }
-  /* .cliente:nth-child(odd) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .contenedor-clientes {
+    flex-wrap: nowrap;
   }
-
-  .cliente:nth-child(even) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .item-c:nth-child(1) {
-    align-self: center;
-  } */
-
 }
 
 @media only screen and (min-width: 629px) {
