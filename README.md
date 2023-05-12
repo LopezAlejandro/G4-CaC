@@ -1,6 +1,3 @@
-# G4-CaC
-Repositorio Grupo 4 Codo a Codo
-
 # Maitri 
 
 Sitio web, para una empresa de venta de productos de belleza naturales. 
