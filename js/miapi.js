@@ -1,15 +1,21 @@
 window.onload = function () {
-  var contenido = document.getElementById("clientes");
-  const cliente = [];
+  randomUser().catch((err) => {
+    console.log(err);
+  });
+};
 
-  fetch("https://randomuser.me/api/?results=3")
-    .then((res) => res.json()) //los datos se traeran en JSON
-    .then((data) => {
-      console.log(data.results);
-      data.results.forEach((cliente, i) => {
-        console.log(cliente);
-        contenido.innerHTML = `
-        ${contenido.innerHTML}
+const randomUser = async () => {
+  const respuesta = await fetch("https://randomuser.me/api/?results=3");
+  const data = await respuesta.json();
+  muestraRandomUser(data.results);
+};
+
+muestraRandomUser = (usuario) => {
+  var contenido = document.getElementById("clientes");
+  usuario.forEach((cliente) => {
+    //console.log(cliente);
+    contenido.innerHTML = `
+      ${contenido.innerHTML}
         <div class="cliente cliente-card">
             <img src="${cliente.picture.large}"
             alt="${cliente.name.first}"
@@ -20,6 +26,5 @@ window.onload = function () {
             <h4 class="comentario-cliente">${cliente.location.country}</h4>
           </div>
        `;
-      });
-    });
+  });
 };

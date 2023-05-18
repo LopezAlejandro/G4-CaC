@@ -627,7 +627,9 @@ footer {
 
 .cliente-pic {
   width: 65%;
-  height: 60%;
+  height: auto;
+  border-radius: 50%;
+  border:5px solid #a071a8;
 }
 
 /*Estilos Adaptables */
