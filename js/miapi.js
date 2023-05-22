@@ -27,6 +27,7 @@ muestraRandomUser = (usuario) => {
           </div>
        `;
   });
+  };
   
   const $d = document;
 const $selectProvincias = $d.getElementById("selectProvincias");
@@ -49,4 +50,4 @@ function provincia() {
 }
 
 $d.addEventListener("DOMContentLoaded", provincia)
-};
+
