@@ -29,14 +29,14 @@ muestraRandomUser = (usuario) => {
   });
   };
   
-  const $d = document;
+const $d = document;
 const $selectProvincias = $d.getElementById("selectProvincias");
 
 function provincia() {
     fetch("https://apis.datos.gob.ar/georef/api/provincias")
     .then(res => res.ok ? res.json() : Promise.reject(res))
     .then(json => {
-        let $options = `<option value="Seleccione una provincia">Seleccione una provincia</option>`;
+        let $options = `<option value="_Provincia_">_Provincia_</option>`;
 
         json.provincias.forEach(el => $options += `<option value="${el.nombre}">${el.nombre}</option>`);
 
