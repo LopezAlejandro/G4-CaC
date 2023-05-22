@@ -33,4 +33,27 @@ muestraRandomUser = (usuario) => {
           </div>
        `;
   });
-};
+  };
+  
+const $d = document;
+const $selectProvincias = $d.getElementById("selectProvincias");
+
+function provincia() {
+    fetch("https://apis.datos.gob.ar/georef/api/provincias")
+    .then(res => res.ok ? res.json() : Promise.reject(res))
+    .then(json => {
+        let $options = `<option value="_Provincia_">_Provincia_</option>`;
+
+        json.provincias.forEach(el => $options += `<option value="${el.nombre}">${el.nombre}</option>`);
+
+        $selectProvincias.innerHTML = $options;
+    })
+    .catch(error => {
+        let message = error.statusText || "Ocurrió un error";
+
+        $selectProvincias.nextElementSibling.innerHTML = `Error: ${error.status}: ${message}`;
+    })
+}
+
+$d.addEventListener("DOMContentLoaded", provincia)
+
