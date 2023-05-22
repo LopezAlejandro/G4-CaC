@@ -12,6 +12,12 @@ const randomUser = async () => {
 
 muestraRandomUser = (usuario) => {
   var contenido = document.getElementById("clientes");
+  var s = document.querySelector("select");
+  
+  Array.from(s.options)
+    .sort((a, b) => (a.text.toLowerCase() > b.text.toLowerCase() ? 1 : -1))
+    .forEach((el) => s.add(el));
+
   usuario.forEach((cliente) => {
     //console.log(cliente);
     contenido.innerHTML = `
