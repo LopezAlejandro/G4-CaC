@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var validarDireccion = function (e) {
     if (formulario.direccion.value.length < 10) {
-      alert("Por favor, escribe tu dirección.");
+      alert("Por favor, escribe tu direcci&oacuten.");
       document.getElementById("direccion").focus();
       return false;
     }
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var validarCodigo = function (e) {
     var cp = document.getElementById("codigo").value;
     if (isNaN(cp) || cp < 1000 || cp > 9999) {
-      alert("Por favor, escribe tu código postal correctamente.");
+      alert("Por favor, escribe tu c&oacutedigo postal correctamente.");
       document.getElementById("codigo").focus();
       return false;
     }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
     var email = document.getElementById("email").value;
     if (!expresion.test(email)) {
-      alert("Por favor, escribe un email válido.");
+      alert("Por favor, escribe un email v&aacutelido.");
       document.getElementById("email").focus();
       return false;
     }
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var validarMensaje = function () {
     if (formulario.mensaje.value.length == 0) {
-      alert("Por favor, escribe algun mensaje válido.");
+      alert("Por favor, escribe algun mensaje v&aacutelido.");
       document.getElementById("mensaje").focus();
       return false;
     }

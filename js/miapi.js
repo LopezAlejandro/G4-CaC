@@ -4,6 +4,8 @@ window.onload = function () {
   });
 };
 
+// Acceso a la api de usuarios aleatorios //
+
 const randomUser = async () => {
   const respuesta = await fetch("https://randomuser.me/api/?results=3");
   const data = await respuesta.json();
@@ -12,12 +14,6 @@ const randomUser = async () => {
 
 muestraRandomUser = (usuario) => {
   var contenido = document.getElementById("clientes");
-  var s = document.querySelector("select");
-  
-  Array.from(s.options)
-    .sort((a, b) => (a.text.toLowerCase() > b.text.toLowerCase() ? 1 : -1))
-    .forEach((el) => s.add(el));
-
   usuario.forEach((cliente) => {
     //console.log(cliente);
     contenido.innerHTML = `
@@ -33,27 +29,38 @@ muestraRandomUser = (usuario) => {
           </div>
        `;
   });
-  };
-  
-const $d = document;
-const $selectProvincias = $d.getElementById("selectProvincias");
+};
 
-function provincia() {
-    fetch("https://apis.datos.gob.ar/georef/api/provincias")
-    .then(res => res.ok ? res.json() : Promise.reject(res))
-    .then(json => {
-        let $options = `<option value="_Provincia_">_Provincia_</option>`;
+// Acceso a la Api de listado de provincias Argentinas //
 
-        json.provincias.forEach(el => $options += `<option value="${el.nombre}">${el.nombre}</option>`);
+const sPcias = document.getElementById("selectProvincias");
 
-        $selectProvincias.innerHTML = $options;
-    })
-    .catch(error => {
-        let message = error.statusText || "Ocurrió un error";
+const provincia = async () => {
+  try {
+    const pciar = await fetch(
+      "https://apis.datos.gob.ar/georef/api/provincias"
+    );
+    if (!pciar.ok) {
+      throw new Error(`HTTP error! status: ${pciar.status}`);
+    }
+    const res = await pciar.json();
+    cargaSelect(res.provincias);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-        $selectProvincias.nextElementSibling.innerHTML = `Error: ${error.status}: ${message}`;
-    })
-}
+cargaSelect = (pcias) => {
+  let $options = `<option hidden selected value="">_Provincia_</option>`;
+  pcias.forEach(
+    (el) => ($options += `<option value="${el.nombre}">${el.nombre}</option>`)
+  );
+  sPcias.innerHTML = $options;
 
-$d.addEventListener("DOMContentLoaded", provincia)
+  // Ordeno alfabeticamente el arreglo de las provincias //
 
+  Array.from(sPcias.options)
+    .sort((a, b) => (a.text.toLowerCase() > b.text.toLowerCase() ? 1 : -1))
+    .forEach((el) => sPcias.add(el));
+};
+document.addEventListener("DOMContentLoaded", provincia);

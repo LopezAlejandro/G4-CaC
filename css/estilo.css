@@ -63,7 +63,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3em 1.5em;
-  
+
   background: url("../img/Fondo HTML 5.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -496,6 +496,12 @@ footer {
 #cto_frm fieldset.ciudad input[name="provincia"] {
   width: 52%;
 }
+
+#cto_frm fieldset.ciudad select[name="provincia"]:required:invalid {
+  color: grey;
+  font-size: small;
+}
+
 #cto_frm fieldset.ciudad select[name="ciudad"],
 #cto_frm fieldset.ciudad input[name="codigo"] {
   width: 20%;
@@ -629,7 +635,7 @@ footer {
   width: 65%;
   height: auto;
   border-radius: 50%;
-  border:5px solid #a071a8;
+  border: 5px solid #a071a8;
 }
 
 /*Estilos Adaptables */
