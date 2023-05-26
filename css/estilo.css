@@ -117,7 +117,7 @@ main {
   color: #8e44ad;
   font-family: "Delicious Handrawn", cursive;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 33px;
   margin-bottom: 20px;
 }
 
@@ -282,8 +282,8 @@ footer {
 
 .item-f:nth-child(1) {
   display: flex;
-  flex-grow: 1;
-  flex-shrink: 2;
+/*    flex-grow: 1;
+  flex-shrink: 2;  */
   flex-basis: 10%;
   align-self: auto;
   order: 0;
@@ -302,9 +302,9 @@ footer {
 
 .item-f:nth-child(3) {
   display: flex;
-  flex-grow: 3;
+  flex-grow: 10;
   flex-shrink: 1;
-  flex-basis: 60%;
+  flex-basis: 10%;
   align-self: center;
   order: 0;
 }
