@@ -17,5 +17,6 @@ Sitio web, para una empresa de venta de productos de belleza naturales.
 - Iconos de Font Awesome
 - Transiciones CSS en los icones de redes sociales
 - Iframe con Google Map
+- Envio de correo electronico via Formspree
 
 
